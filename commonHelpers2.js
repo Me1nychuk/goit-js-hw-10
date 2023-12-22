@@ -1,0 +1,2 @@
+import"./assets/modulepreload-polyfill-ec808ebb.js";const t=document.querySelector(".form"),n=t.elements.delay,l=t.elements.state;t.elements.submit;t.addEventListener("submit",i=>{i.preventDefault();const s=+n.value;new Promise((e,o)=>{setTimeout(()=>{l.value==="fulfilled"?e(`Fulfilled promise in ${s}ms`):o(`Rejected promise in ${s}ms`)},s)}).then(e=>{iziToast.success({title:"OK",position:"topRight",message:e})}).catch(e=>{iziToast.error({title:"Error",position:"topRight",message:e})})});
+//# sourceMappingURL=commonHelpers2.js.map
